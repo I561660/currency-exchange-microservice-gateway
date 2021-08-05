@@ -1,0 +1,11 @@
+# HTTP Server Config
+server:
+  port: 8765
+  
+# Spring Config
+spring:  application:    name: api-gateway-server
+    
+# Eureka Config
+eureka:  client:    service-url:      default-zone : http://localhost:8761/eureka
+      registerWithEureka: true
+      fetchRegistry: true
